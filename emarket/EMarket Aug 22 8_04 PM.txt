@@ -1,0 +1,205 @@
+ #1 Categoria e produtos - Caio / Gustavo Dias
+
+1-
+SELECT
+CategoriaID,
+Descricao,
+CategoriaNome,
+Imagem
+ FROM categorias;
+ 
+ 2-
+ SELECT 
+CategoriaNome,
+Descricao
+FROM categorias;
+
+3-
+SELECT 
+ProdutoID,
+ProdutoNome,
+ProvedorID,
+CategoriaID,
+PrecoUnitario,
+QuantidadePorUnidade,
+UnidadesEstoque,
+UnidadesPedidas,
+NivelReabastecimento,
+Descontinuado
+FROM produtos;
+
+4-
+SELECT 
+Descontinuado = 1
+FROM produtos;
+
+5-
+SELECT 
+ProdutoNome
+FROM produtos
+WHERE ProvedorID = 8;
+
+6-
+SELECT 
+ProdutoNome
+FROM produtos
+WHERE PrecoUnitario BETWEEN 10 AND 22;
+ 
+ 
+ 
+ 7- Gustavo Dias
+SELECT
+*
+FROM produtos
+WHERE UnidadesEstoque < NivelReabastecimento;
+ 
+ 8 - Gustavo Dias
+ 
+ SELECT
+*
+FROM produtos
+WHERE UnidadesEstoque < NivelReabastecimento
+AND UnidadesPedidas = 0;
+ 
+ # PRODUTOS - Gustavo Dias
+ 
+ 1-
+ SELECT
+*
+FROM produtos
+ORDER BY PrecoUnitario DESC;
+
+2-
+SELECT
+*
+FROM produtos
+ORDER BY PrecoUnitario DESC
+LIMIT 5;
+
+3-
+
+SELECT
+*
+FROM produtos
+ORDER BY UnidadesEstoque DESC
+LIMIT 10;
+ 
+ 
+ #2 Fatura - Diego
+
+// 1
+SELECT
+	*
+FROM faturas
+	ORDER BY DataFatura ASC;
+  
+// 2
+SELECT
+	*
+FROM faturas
+	WHERE PaisEnvio LIKE "USA" AND FormaEnvio NOT LIKE 3
+	ORDER BY DataFatura ASC;
+  
+// 3
+SELECT
+	*
+FROM faturas
+	WHERE ClienteID LIKE "GOURL"
+	ORDER BY DataFatura ASC;
+
+// 4
+SELECT
+	*
+FROM faturas
+	WHERE EmpregadoID LIKE 2
+    OR EmpregadoID LIKE 3
+    OR EmpregadoID LIKE 5
+    OR EmpregadoID LIKE 8
+    OR EmpregadoID LIKE 9
+	ORDER BY DataFatura ASC;
+ 
+ 
+ #3 detalhe fatura - Yan
+ 
+ SELECT 
+	FaturaId,
+    ProdutoID,
+    Quantidade 
+FROM detalhefatura;
+
+SELECT 
+	FaturaId,
+    ProdutoID,
+    Quantidade 
+FROM detalhefatura
+ORDER BY FaturaId DESC;
+
+SELECT 
+	FaturaId,
+    ProdutoID,
+    Quantidade 
+FROM detalhefatura
+WHERE Quantidade BETWEEN 50 AND 100
+ORDER BY FaturaId DESC;
+
+SELECT 
+	FaturaId AS Fatura,
+    ProdutoID AS Produto,
+    PrecoUnitario * Quantidade AS Total 
+FROM detalhefatura;
+ 
+ 
+ 
+ #4 Clientes - Pedro 
+ 
+// 1 
+ 
+SELECT
+		Contato,
+    Empresa,
+    Titulo,
+    Pais
+FROM clientes
+		ORDER BY Pais ASC;
+ 
+// 2 
+
+SELECT
+	 	Contato,
+    Empresa,
+    Titulo,
+    Pais
+FROM clientes
+		WHERE Titulo LIKE 'Owner'
+		ORDER BY Pais ASC;
+ 
+// 3
+
+SELECT
+		Contato,
+    Empresa,
+    Titulo,
+    Pais
+FROM clientes
+		WHERE Contato LIKE 'C%'
+		ORDER BY Pais ASC;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
