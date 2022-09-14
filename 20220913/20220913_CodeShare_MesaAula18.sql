@@ -1,8 +1,9 @@
-Pedro Simoes
-Igor Matos
-Mauricio Sampaio
-Johny Joaquim
-Marcos Araujo
+
+-- Igor Matos
+-- Johny Joaquim
+-- Marcos Araujo
+-- Mauricio Sampaio
+-- Pedro Simoes
 
 /* 
 AULA 18 - EXERCICIO MESA
