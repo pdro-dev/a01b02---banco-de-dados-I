@@ -6,7 +6,7 @@
 -- Procedures para retornar a quantidade de mesas atendidas por funcionario
 
 DELIMITER $$
-CREATE PROCEDURE qtdMesasAtendidas 
+CREATE PROCEDURE sp_qtdMesasAtendidas 
 (
     IN NumFuncId INT
 )
