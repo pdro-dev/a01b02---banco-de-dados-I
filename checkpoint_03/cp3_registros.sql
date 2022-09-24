@@ -57,6 +57,7 @@ INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES 
 INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES ('Roberto', 'Silva', '2020-10-10', '1990-10-10', 'Garçom');
 INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES ('Robson', 'Silva', '2020-10-10', '1990-10-10', 'Garçom');
 INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES ('Roberval', 'Silva', '2020-10-10', '1990-10-10', 'Garçom');
+INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES ('Robério', 'Silva', '2020-10-10', '1990-10-10', 'Garçom');
 
 
 
@@ -71,6 +72,8 @@ INSERT INTO pedido (mesaId, funcionarioId) VALUES (7, 10);
 INSERT INTO pedido (mesaId, funcionarioId) VALUES (8, 11);
 INSERT INTO pedido (mesaId, funcionarioId) VALUES (9, 12);
 INSERT INTO pedido (mesaId, funcionarioId) VALUES (10, 13);
+INSERT INTO pedido (mesaId, funcionarioId) VALUES (1, 14);
+INSERT INTO pedido (mesaId, funcionarioId) VALUES (2, 15);
 
 
 -- -- registros tabela item (nome, valorUnitario, dataCompra, dataValidade, quantidade, categoria)
@@ -104,9 +107,9 @@ INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (2, 3, 1, 
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (2, 4, 1, 10);
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (2, 5, 1, 10);
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (2, 6, 1, 10);
--- pedido 3
-INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (3, 1, 1, 10);
-INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (3, 2, 1, 10);
+-- pedido 3 (macarrão e refrigerante)
+INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (3, 3, 1, 10);
+INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (3, 7, 1, 10);
 -- pedido 4
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (4, 5, 1, 10);
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (4, 6, 1, 10);
@@ -135,6 +138,7 @@ INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (11, 2, 1,
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (11, 6, 1, 10);
 -- pedido 12 (batata frita e cerveja)
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (12, 2, 1, 10);
+INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (12, 6, 1, 10);
 
 
 -- -- registros tabela comanda (formaPag, pedidoId, valorTotal, dataPag)
