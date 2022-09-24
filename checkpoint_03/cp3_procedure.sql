@@ -12,23 +12,21 @@ CREATE PROCEDURE qtdMesasAtendidas
 )
 BEGIN
     SELECT 
-    -- nome completo funcionario
+    f.funcionarioId AS 'ID Funcionario',
     CONCAT(f.nome, ' ', f.sobrenome) AS 'Nome Completo',
-    -- cargo funcionario
     f.cargo AS 'Cargo',
-    -- quantidade de mesas atendidas
-    COUNT (m.mesaId) AS 'Mesas Atendidas'
-    -- quantidade de pedidos retirados
     COUNT(p.pedidoId) AS 'Pedidos Retirados'
     FROM funcionarios f
-    INNER JOIN pedido p ON p.funcionarioId = f.funcionarioId
+    INNER JOIN pedido p ON f.funcionarioId = p.funcionarioId
     WHERE f.funcionarioId = NumFuncId;
 END$$
 DELIMITER ;
 
 
 -- testando procedure
-CALL qtdMesasAtendidas(1);
+CALL qtdMesasAtendidas(19);
+CALL qtdMesasAtendidas(20);
+
 
 -- drop procedure
 DROP PROCEDURE qtdMesasAtendidas;

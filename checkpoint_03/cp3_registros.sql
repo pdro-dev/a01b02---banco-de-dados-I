@@ -13,6 +13,7 @@ INSERT INTO mesa (mesaTipo, qtdLugares) VALUES ('Mesa de 14 lugares', 14);
 INSERT INTO mesa (mesaTipo, qtdLugares) VALUES ('Mesa de 16 lugares', 16);
 INSERT INTO mesa (mesaTipo, qtdLugares) VALUES ('Mesa de 18 lugares', 18);
 
+
 -- -- registros tabela reserva
 INSERT INTO reserva (valorReserva, dataReserva) VALUES (100.00, '2020-10-10 10:00:00');
 INSERT INTO reserva (valorReserva, dataReserva) VALUES (200.00, '2020-10-10 10:00:00');
