@@ -4,11 +4,18 @@
 
 -- View para mostrar dados de funcionarios, pedidos e estoque de itens
 
-CREATE VIEW dados AS
+CREATE VIEW vw_dadosFuncionarios AS
 SELECT
 f.funcionarioId AS 'ID Funcionario',
 CONCAT(f.nome, ' ', f.sobrenome) AS 'Nome Completo',
 f.cargo AS 'Cargo',
 -- datas 
 f.dataContrat AS 'Data Contratação',
-f.dataNasc AS 'Data Nascimento',
+f.dataNasc AS 'Data Nascimento'
+FROM funcionarios f;
+
+
+
+-- testando view
+
+SELECT * FROM vw_dadosFuncionarios;
