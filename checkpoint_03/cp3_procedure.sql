@@ -24,8 +24,8 @@ DELIMITER ;
 
 
 -- testando procedure
-CALL qtdMesasAtendidas(19);
-CALL qtdMesasAtendidas(20);
+-- CALL qtdMesasAtendidas(19);
+-- CALL qtdMesasAtendidas(20);
 
 
 -- drop procedure
