@@ -1,4 +1,7 @@
+-- Active: 1664039663034@@127.0.0.1@3306@checkpoint_3
 /* Calls para a tabela comanda */
+
+USE checkpoint_3;
 
 CALL dadosComanda ('Dinheiro', 2, 60, '2020-10-10'); 
 CALL dadosComanda ('Cartao', 3, 100, '2020-10-10'); 
@@ -45,3 +48,7 @@ CALL dadosReservaMesa(9,6);
 CALL dadosReservaMesa(10,7);
 CALL dadosReservaMesa(11,8);
 CALL dadosReservaMesa(12,9);
+
+-- testando procedure
+CALL qtdMesasAtendidas(19);
+CALL qtdMesasAtendidas(20);
