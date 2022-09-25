@@ -14,6 +14,8 @@ INSERT INTO mesa (mesaTipo, qtdLugares) VALUES ('VIP', 4);
 -- READ
 SELECT * FROM funcionarios;
 
+SELECT * FROM comanda;
+
 -- UPDATE
 UPDATE mesa SET mesaTipo = 'VIP' WHERE mesaId = 1;
 

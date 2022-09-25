@@ -30,3 +30,74 @@ CALL qtdMesasAtendidas(20);
 
 -- drop procedure
 DROP PROCEDURE qtdMesasAtendidas;
+
+-- Procedure para dar insert na tabela Comanda
+
+DELIMITER %%
+
+CREATE PROCEDURE dadosComanda
+(
+valorformaPag VARCHAR (20),
+valorpedidoId INT,
+dadosvalorTotal FLOAT,
+valordataPag DATETIME
+)
+BEGIN
+	INSERT INTO 
+		comanda (formaPag, pedidoId, valorTotal, dataPag)
+	VALUES
+		(valorformaPag, valorpedidoId, dadosvalorTotal, valordataPag);
+END %%
+DELIMITER ;
+
+
+/* Procedure para dar insert na tabela mesa */
+CREATE PROCEDURE dadosMesa
+(
+valormesaTipo VARCHAR(100),
+valorqtdLugares VARCHAR(100),
+valorcomandaId INT
+)
+BEGIN
+	INSERT INTO 
+		mesa (mesaTipo, qtdLugares, comandaId)
+	VALUES
+		(valormesaTipo,valorqtdLugares, valorcomandaId);
+END %%
+DELIMITER ;
+
+
+/* Procedure para dar insert na tabela Reserva */
+
+CREATE PROCEDURE dadosReserva
+(
+dadosReserva VARCHAR(100),
+dadosdataReserva VARCHAR(100)
+)
+BEGIN
+	INSERT INTO 
+		reserva (valorReserva,dataReserva)
+	VALUES
+		(dadosReserva,dadosdataReserva);
+END %%
+DELIMITER ;
+
+
+/* Procedure para dar insert na tabela reservaMesa */
+
+DELIMITER %%
+CREATE PROCEDURE dadosReservaMesa
+(
+dadosMesaId INT,
+dadosReservaId INT
+)
+BEGIN
+	INSERT INTO 
+		reservaMesa (mesaId,reservaId)
+	VALUES
+		(dadosMesaId,dadosReservaId);
+END %%
+DELIMITER ;
+
+
+
