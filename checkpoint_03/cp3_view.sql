@@ -47,7 +47,7 @@ INNER JOIN pedido p ON p.funcionarioId = f.funcionarioId
 INNER JOIN mesa m ON p.mesaId = m.mesaId
 INNER JOIN reservamesa rm ON m.mesaId = rm.mesaId
 INNER JOIN reserva r ON rm.reservaId = r.reservaId
-INNER JOIN comanda c ON c.pedidoId = p.pedidoId
+INNER JOIN comanda c ON m.mesaId = c.mesaId
 INNER JOIN itemPedido ip ON ip.pedidoId = p.pedidoId
 INNER JOIN item i ON i.itemId = ip.itemId;
 

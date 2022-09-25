@@ -142,18 +142,28 @@ INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (12, 2, 1,
 INSERT INTO itemPedido (pedidoId, itemId, qtdItem, ValorTotal) VALUES (12, 6, 1, 10);
 
 
--- -- registros tabela comanda (formaPag, pedidoId, valorTotal, dataPag)
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 1, 60, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 2, 60, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 3, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 4, 40, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 5, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 6, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 7, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 8, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 9, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 10, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 11, 20, '2020-10-10');
-INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 12, 20, '2020-10-10');
+-- -- -- registros tabela comanda (formaPag, pedidoId, valorTotal, dataPag)
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 1, 60, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 2, 60, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 3, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 4, 40, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 5, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 6, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 7, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 8, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 9, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 10, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 11, 20, '2020-10-10');
+-- INSERT INTO comanda (formaPag, pedidoId, valorTotal, dataPag) VALUES ('Dinheiro', 12, 20, '2020-10-10');
 
 
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 60, '2020-10-10', 1);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 60, '2020-10-10', 2);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 3);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 40, '2020-10-10', 4);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 5);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 6);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 7);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 8);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 9);
+INSERT INTO comanda (formaPag, valorTotal, dataPag, mesaId) VALUES ('Dinheiro', 20, '2020-10-10', 10);

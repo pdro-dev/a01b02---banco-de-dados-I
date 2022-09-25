@@ -7,6 +7,15 @@ CREATE TABLE IF NOT EXISTS mesa (
     qtdLugares TINYINT NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS comanda (
+	comandaId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    formaPag VARCHAR(20) NOT NULL,
+    valorTotal FLOAT NOT NULL,
+    dataPag DATETIME,
+    mesaId INT NOT NULL,
+    CONSTRAINT cnt_Comanda_mesa FOREIGN KEY (mesaId) REFERENCES mesa(mesaId)
+);
+
 CREATE TABLE IF NOT EXISTS reserva (
 	reservaId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     valorReserva FLOAT NOT NULL,
@@ -57,14 +66,5 @@ CREATE TABLE IF NOT EXISTS itemPedido (
     valorTotal FLOAT NOT NULL,
 	CONSTRAINT cnt_pedido_itemPedido FOREIGN KEY (pedidoId) REFERENCES pedido(pedidoId),
     CONSTRAINT cnt_item_itemPedido FOREIGN KEY (itemId) REFERENCES item(itemId)
-);
-
-CREATE TABLE IF NOT EXISTS comanda (
-	comandaId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    formaPag VARCHAR(20) NOT NULL,
-    pedidoId INT NOT NULL,
-    valorTotal FLOAT NOT NULL,
-    dataPag DATETIME,
-    CONSTRAINT cnt_comanda_pedido FOREIGN KEY (pedidoId) REFERENCES pedido(pedidoId)
 );
 
