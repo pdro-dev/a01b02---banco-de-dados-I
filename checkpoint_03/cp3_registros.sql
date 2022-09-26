@@ -61,6 +61,39 @@ INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES 
 INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES ('Robério', 'Silva', '2020-10-10', '1990-10-10', 'Garçom');
 
 
+-- -- registros tabela enderecoFuncionarios
+-- enderecoFuncionarioId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+-- funcionarioId INT NOT NULL,
+-- rua VARCHAR(50) NOT NULL,
+-- numero INT NOT NULL,
+-- bairro VARCHAR(50) NOT NULL,
+-- cidade VARCHAR(50) NOT NULL,
+-- estado VARCHAR(2) NOT NULL,
+-- cep VARCHAR(8) NOT NULL,
+INSERT INTO enderecoFuncionario (funcionarioId, rua, numero, bairro, cidade, estado, cep) 
+    VALUES 
+    (1, 'Rua 1', 1, 'Bairro 1', 'Cidade 1', 'SP', '12345678'),
+    (2, 'Rua 2', 2, 'Bairro 2', 'Cidade 2', 'UF', '87654321'),
+    (3, 'Rua 3', 3, 'Bairro 3', 'Cidade 3', 'UF', '12345678'),
+    (4, 'Rua 4', 4, 'Bairro 4', 'Cidade 4', 'UF', '87654321'),
+    (5, 'Rua 5', 5, 'Bairro 5', 'Cidade 5', 'UF', '12345678'),
+    (6, 'Rua 6', 6, 'Bairro 6', 'Cidade 6', 'UF', '87654321'),
+    (7, 'Rua 7', 7, 'Bairro 7', 'Cidade 7', 'UF', '12345678'),
+    (8, 'Rua 8', 8, 'Bairro 8', 'Cidade 8', 'UF', '87654321'),
+    (9, 'Rua 9', 9, 'Bairro 9', 'Cidade 9', 'UF', '12345678'),
+    (10, 'Rua 10', 10, 'Bairro 10', 'Cidade 10', 'UF', '87654321'),
+    (11, 'Rua 11', 11, 'Bairro 11', 'Cidade 11', 'UF', '12345678'),
+    (12, 'Rua 12', 12, 'Bairro 12', 'Cidade 12', 'UF', '87654321'),
+    (13, 'Rua 13', 13, 'Bairro 13', 'Cidade 13', 'UF', '12345678'),
+    (14, 'Rua 14', 14, 'Bairro 14', 'Cidade 14', 'UF', '87654321'),
+    (15, 'Rua 15', 15, 'Bairro 15', 'Cidade 15', 'UF', '12345678'),
+    (16, 'Rua 16', 16, 'Bairro 16', 'Cidade 16', 'UF', '87654321'),
+    (17, 'Rua 17', 17, 'Bairro 17', 'Cidade 17', 'UF', '12345678'),
+    (18, 'Rua 18', 18, 'Bairro 18', 'Cidade 18', 'UF', '87654321'),
+    (19, 'Rua 19', 19, 'Bairro 19', 'Cidade 19', 'UF', '12345678'),
+    (20, 'Rua 20', 20, 'Bairro 20', 'Cidade 20', 'UF', '87654321')
+    ;
+
 
 -- -- registros tabela pedido (mesaId, funcionarioId garçom)
 INSERT INTO pedido (mesaId, funcionarioId) VALUES (1, 19);

@@ -39,6 +39,18 @@ CREATE TABLE IF NOT EXISTS funcionarios (
     cargo VARCHAR(25) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS enderecoFuncionario (
+    enderecoFuncionarioId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    funcionarioId INT NOT NULL,
+    rua VARCHAR(50) NOT NULL,
+    numero INT NOT NULL,
+    bairro VARCHAR(50) NOT NULL,
+    cidade VARCHAR(50) NOT NULL,
+    estado VARCHAR(2) NOT NULL,
+    cep VARCHAR(8) NOT NULL,
+    CONSTRAINT cnt_EnderecoFuncionario_Funcionario FOREIGN KEY (funcionarioId) REFERENCES funcionarios(funcionarioId)
+);
+
 CREATE TABLE IF NOT EXISTS pedido (
 	pedidoId INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     mesaId INT NOT NULL,
