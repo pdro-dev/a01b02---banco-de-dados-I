@@ -36,6 +36,7 @@ INSERT INTO funcionarios (nome, sobrenome, dataContrat, dataNasc, cargo) VALUES 
 
 ALTER TABLE funcionarios ADD COLUMN salario FLOAT;
 
+SET SQL_SAFE_UPDATES = 0;
 -- atualizar salarios de todos os cargos
 UPDATE funcionarios SET salario = 1000.00 WHERE cargo = 'Garçom';
 UPDATE funcionarios SET salario = 2000.00 WHERE cargo = 'Cozinheiro';
@@ -47,6 +48,6 @@ UPDATE funcionarios SET salario = 1000.00 WHERE cargo = 'Auxiliar de Cozinha';
 UPDATE funcionarios SET salario = 1000.00 WHERE cargo = 'Barman';
 UPDATE funcionarios SET salario = 1000.00 WHERE cargo = 'Auxiliar de Limpeza';
 UPDATE funcionarios SET salario = 1000.00 WHERE cargo = 'Segurança';
-
+SET SQL_SAFE_UPDATES = 1;
 
 
